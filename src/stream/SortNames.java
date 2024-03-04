@@ -11,19 +11,16 @@ public class SortNames {
        sort(17);
     }
 
-    private static void sort(int count) {
-        List<String> humans = new HumanGenerator()
+    public static void sort(int count) {
+        List<String> names = new HumanGenerator()
                 .generate(count)
                 .stream()
                 .map(Human::name)
                 .sorted(Comparator.reverseOrder())
                 .map(String::toUpperCase)
+                .peek(System.out::println)
                 .toList();
 
-        for (String human : humans) {
-            System.out.println(human);
-        }
-
-        System.out.println("humans.size() = " + humans.size());
+        System.out.println("humans.size() = " + names.size());
     }
 }
