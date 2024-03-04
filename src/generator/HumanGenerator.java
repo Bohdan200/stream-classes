@@ -21,7 +21,7 @@ public class HumanGenerator {
         String fullName = createHumanName();
 
         for (Human human : humans) {
-            if (fullName.equals(human.getName())) {
+            if (fullName.equals(human.name())) {
                 makeHuman();
                 return;
             }

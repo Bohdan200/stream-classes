@@ -2,23 +2,7 @@ package generator;
 
 import java.util.Objects;
 
-public class Human {
-    private final String name;
-    private final int salary;
-
-    public Human(String name, int salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getSalary() {
-        return salary;
-    }
-
+public record Human(String name, int salary) {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

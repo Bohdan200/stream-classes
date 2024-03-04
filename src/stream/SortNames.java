@@ -6,7 +6,7 @@ import generator.HumanGenerator;
 import java.util.Comparator;
 import java.util.List;
 
-public class NamesSorted {
+public class SortNames {
     public static void main(String[] args) {
        sort(17);
     }
@@ -15,7 +15,7 @@ public class NamesSorted {
         List<String> humans = new HumanGenerator()
                 .generate(count)
                 .stream()
-                .map(Human::getName)
+                .map(Human::name)
                 .sorted(Comparator.reverseOrder())
                 .map(String::toUpperCase)
                 .toList();

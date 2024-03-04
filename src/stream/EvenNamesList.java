@@ -6,14 +6,14 @@ import generator.HumanGenerator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class EvenNamesOrder {
+public class EvenNamesList {
     public static void main(String[] args) {
         AtomicInteger order = new AtomicInteger(1);
 
-        List<String> humans = new HumanGenerator()
+        List<String> evenNames = new HumanGenerator()
                 .generate(10)
                 .stream()
-                .map(Human::getName)
+                .map(Human::name)
                 .map(name -> {
                     int acc = order.intValue();
                     order.set(acc + 1);
@@ -22,8 +22,8 @@ public class EvenNamesOrder {
                 .filter(name -> !name.isEmpty())
                 .toList();
 
-        for (String human : humans) {
-            System.out.println(human);
+        for (String name : evenNames) {
+            System.out.println(name);
         }
 
     }

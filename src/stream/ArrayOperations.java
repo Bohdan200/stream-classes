@@ -27,7 +27,7 @@ public class ArrayOperations {
 
                     return str.toString();
                 })
-                .reduce("", (acc, p) -> acc + p);
+                .reduce("", (acc, el) -> acc + el);
 
         return result.substring(0, result.length() - 2);
     }

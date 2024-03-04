@@ -13,7 +13,7 @@ public class OddNamesIntStream {
         List<String> names = new HumanGenerator()
                 .generate(10)
                 .stream()
-                .map(Human::getName)
+                .map(Human::name)
                 .filter(name -> !name.isEmpty())
                 .toList();
 

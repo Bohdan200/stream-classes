@@ -15,7 +15,7 @@ public class GetNamesByIndex {
         List<String> names = new HumanGenerator()
                 .generate(20)
                 .stream()
-                .map(Human::getName)
+                .map(Human::name)
                 .toList();
 
         return names.stream()
