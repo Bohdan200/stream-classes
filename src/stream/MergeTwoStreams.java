@@ -1,3 +1,5 @@
+package stream;
+
 import java.util.Iterator;
 import java.util.stream.Stream;
 import java.util.List;

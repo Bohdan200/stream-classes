@@ -1,8 +1,10 @@
+package stream;
+
 import java.util.*;
 
-public class ArraySortedStream {
+public class ArrayOperations {
     public static void main(String[] args) {
-        String[] arr = new String[]{"1, 2, 0", "4, 5", "12, 9", "20, 14, 27"};
+        String[] arr = new String[]{"1, 2, 0", "4, 5"};
 
         System.out.println("sort() = " + sort(arr));
     }

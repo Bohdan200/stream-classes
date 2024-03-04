@@ -1,10 +1,12 @@
+package stream;
+
 import generator.Human;
 import generator.HumanGenerator;
 
 import java.util.Comparator;
 import java.util.List;
 
-public class NamesSortedStream {
+public class NamesSorted {
     public static void main(String[] args) {
        sort(17);
     }
